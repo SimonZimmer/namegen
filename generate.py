@@ -19,7 +19,7 @@ def generateDataset(pageName):
 
 
 def filterResults(names):
-    outputFile = open("results.txt", 'a')
+    outputFile = open("../results.txt", 'a')
     for name in names:
         response = query(name, container='dict')
         time.sleep(0.2)
